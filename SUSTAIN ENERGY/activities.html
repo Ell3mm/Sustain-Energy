@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sustain Energy | Green Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body class="fade-in">
+  <header class="site-header">
+    <div class="container">
+      <div class="top-row">
+        <div class="brand">
+          <div class="brand-title">Sustain Energy</div>
+          <div class="tagline">Record annual activities and total points.</div>
+        </div>
+        <div class="view-controls" aria-label="View controls">
+          <label for="font-size">Text size</label>
+          <select id="font-size">
+            <option value="small">Small</option>
+            <option value="normal" selected>Normal</option>
+            <option value="large">Large</option>
+          </select>
+          <label for="font-family">Font</label>
+          <select id="font-family">
+            <option value="serif" selected>Serif</option>
+            <option value="sans">Sans</option>
+            <option value="mono">Mono</option>
+          </select>
+          <label for="layout-mode">Layout</label>
+          <select id="layout-mode">
+            <option value="standard" selected>Standard</option>
+            <option value="compact">Compact</option>
+            <option value="wide">Wide</option>
+          </select>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="activities.html">Green Calculator</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shop.html">Green Shop</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+        <a href="user-details.html">User Details</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Green Calculator</h1>
+    <p class="badge">Last updated: 03/05/2026</p>
+    <p>
+      Select the level that best matches your organisation's activities over the past year.
+      The total updates automatically and can be saved to your dashboard.
+    </p>
+
+    <form id="green-form" class="card">
+      <div class="form-grid">
+        <div>
+          <label for="energy">Energy efficiency</label>
+          <select id="energy" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="renewables">Renewable energy use</label>
+          <select id="renewables" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="waste">Waste and recycling</label>
+          <select id="waste" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="water">Water conservation</label>
+          <select id="water" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="transport">Sustainable transport</label>
+          <select id="transport" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="procurement">Responsible procurement</label>
+          <select id="procurement" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="engagement">Staff engagement</label>
+          <select id="engagement" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+        <div>
+          <label for="community">Community impact</label>
+          <select id="community" data-points>
+            <option value="none" data-points="0">Not started (0)</option>
+            <option value="basic" data-points="5">Basic steps (5)</option>
+            <option value="solid" data-points="10">Solid progress (10)</option>
+            <option value="leading" data-points="15">Leading practice (15)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <strong>Total points:</strong> <span id="green-total">0</span>
+        <div>Last saved: <span id="green-last-updated">Not saved</span></div>
+      </div>
+
+      <div class="btn-row">
+        <button id="btn-update" class="btn" type="button">UPDATE</button>
+        <button id="btn-clear" class="btn light" type="button">CLEAR</button>
+        <button id="btn-reset" class="btn secondary" type="button">RESET</button>
+        <button id="btn-delete" class="btn light" type="button">DELETE</button>
+      </div>
+    </form>
+
+    <section class="notice">
+      <strong>Rubric note:</strong> This is a starter rubric. Replace categories or points to match the official
+      "Sustainability Rubric INFORMATION - Graded Unit 2" document when available.
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Privacy and copyright details are available on the Privacy page.</div>
+    <div>Copyright <span id="footer-year">2026</span> Sustain Energy.</div>
+  </footer>
+</body>
+</html>

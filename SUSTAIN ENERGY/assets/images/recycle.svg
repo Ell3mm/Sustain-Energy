@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f3f9f4"/>
+  <g fill="#2a6b4f">
+    <path d="M150 30 L190 70 H165 V120 L120 70 H145 Z"/>
+    <path d="M70 120 L110 80 L125 95 L100 120 H70 Z"/>
+    <path d="M220 120 L180 80 L165 95 L190 120 H220 Z"/>
+  </g>
+  <circle cx="150" cy="120" r="42" fill="none" stroke="#f2c94c" stroke-width="8"/>
+  <text x="20" y="190" font-size="18" fill="#1e2a24">Recycling Loop</text>
+</svg>

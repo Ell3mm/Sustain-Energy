@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f3f9f4"/>
+  <path d="M150 40 C120 80, 110 120, 150 160 C190 120, 180 80, 150 40" fill="#2a6b4f"/>
+  <circle cx="150" cy="110" r="36" fill="none" stroke="#f2c94c" stroke-width="6"/>
+  <text x="20" y="190" font-size="18" fill="#1e2a24">Water Stewardship</text>
+</svg>

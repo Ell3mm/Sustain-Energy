@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sustain Energy | Green Shop</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body class="fade-in">
+  <header class="site-header">
+    <div class="container">
+      <div class="top-row">
+        <div class="brand">
+          <div class="brand-title">Sustain Energy</div>
+          <div class="tagline">Purchase green points responsibly.</div>
+        </div>
+        <div class="view-controls" aria-label="View controls">
+          <label for="font-size">Text size</label>
+          <select id="font-size">
+            <option value="small">Small</option>
+            <option value="normal" selected>Normal</option>
+            <option value="large">Large</option>
+          </select>
+          <label for="font-family">Font</label>
+          <select id="font-family">
+            <option value="serif" selected>Serif</option>
+            <option value="sans">Sans</option>
+            <option value="mono">Mono</option>
+          </select>
+          <label for="layout-mode">Layout</label>
+          <select id="layout-mode">
+            <option value="standard" selected>Standard</option>
+            <option value="compact">Compact</option>
+            <option value="wide">Wide</option>
+          </select>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="activities.html">Green Calculator</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="shop.html">Green Shop</a>
+        <a href="register.html">Register</a>
+        <a href="forgot-password.html">Forgot Password</a>
+        <a href="user-details.html">User Details</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="credentials.html">Credentials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="shop-root">
+    <h1>Green Shop</h1>
+    <p class="badge">Last updated: 05/05/2026</p>
+    <p>Use the shopping trolley to purchase green point vouchers.</p>
+
+    <section class="card-grid">
+      <article class="card">
+        <h3>Starter Voucher</h3>
+        <p>+25 points</p>
+        <p>£50.00</p>
+        <button class="btn" data-add data-name="Starter Voucher" data-points="25" data-price="50">Add to cart</button>
+      </article>
+      <article class="card">
+        <h3>Growth Voucher</h3>
+        <p>+50 points</p>
+        <p>£90.00</p>
+        <button class="btn" data-add data-name="Growth Voucher" data-points="50" data-price="90">Add to cart</button>
+      </article>
+      <article class="card">
+        <h3>Leadership Voucher</h3>
+        <p>+100 points</p>
+        <p>£160.00</p>
+        <button class="btn" data-add data-name="Leadership Voucher" data-points="100" data-price="160">Add to cart</button>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:24px;">
+      <h2>Shopping Trolley</h2>
+      <ul id="cart-list"></ul>
+      <p>Total points: <strong id="cart-total-points">0</strong></p>
+      <p>Total cost: £<strong id="cart-total-cost">0.00</strong></p>
+      <button id="btn-checkout" class="btn">Checkout and Add Points</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Privacy and copyright details are available on the Privacy page.</div>
+    <div>Copyright <span id="footer-year">2026</span> Sustain Energy.</div>
+  </footer>
+</body>
+</html>
