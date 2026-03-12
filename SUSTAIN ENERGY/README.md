@@ -1,4 +1,4 @@
-# Sustain Energy - Project Skeleton
+# Sustain Energy 
 
 This is a basic, easy-to-read skeleton of the Sustain Energy website for the graded unit brief.
 It shows where each required feature will live and includes simple styling and placeholder logic.
@@ -34,3 +34,4 @@ It shows where each required feature will live and includes simple styling and p
 ## Notes
 - This is a skeleton only; it can be extended with database storage and real authentication later.
 - The rubric is a placeholder until the official "Sustainability Rubric INFORMATION - Graded Unit 2" is provided.
+
